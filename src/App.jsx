@@ -1,4 +1,5 @@
-import RoutesApp from './routes/Routes'
+import React from 'react'
+import RoutesApp from './routes/Routes';
 
 function App() {
   return (
