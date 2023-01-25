@@ -25,6 +25,31 @@ const Producto = styled.div`
         margin-top: ${props => props.theme.fontxx};
     }
 
+    button{
+        margin-top: ${props => props.theme.fontxs};
+        padding: ${props => props.theme.fontxs};
+        border-radius:${props => props.theme.fontxs};
+        font-size:${props => props.theme.fontxs};
+        font-weight: bolder;
+    }
+    
+    .btn-add{
+        background-color:${props => props.theme.body};
+        color:${props => props.theme.title};
+    }
+
+    .btn-del{
+        background-color:${props => props.theme.title};
+        color:${props => props.theme.body};
+    }
+
+
+
+    button:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
     @media screen and (min-width: 425px) {
     img{
         width: 16rem;
@@ -40,11 +65,14 @@ function ProductsList({ products }) {
     const { productsList } = useSelector(state => state.cart);
 
 
-    const handleAddProduct = (productId) => {
+    const handleAddOrRemoveProduct = (productId) => {
         const product = products.find(product => product.id === productId);
-
-        dispatch(addProductCart(product));
-    }
+        if (productsList.find(pdt => pdt.id === productId)) {
+          dispatch(deleteProductCart(productId));
+        } else {
+          dispatch(addProductCart(product));
+        }
+      }
     return (
         <>
             <Section>
@@ -56,10 +84,13 @@ function ProductsList({ products }) {
                                 <h4>{product.name}</h4>
                                 <p><b></b> {product.category}</p>
                                 <p><b>$</b> {product.price}</p>
-                                <button onClick={() => handleAddProduct(product.id)}
+                                <button
+                                    className={`btn ${productsList.find(pdt => pdt.id === product.id) ? "btn-del" : "btn-add"}`}
+                                    onClick={() => handleAddOrRemoveProduct(product.id)}
                                 >
-                                    {productsList.find(pdt => pdt.id === product.id) ? "Add" : "Add"} to Cart
+                                    {productsList.find(pdt => pdt.id === product.id) ? "Eliminar" : "Agregar"} al Carrito
                                 </button>
+
                             </Producto>
                         )
                     })

@@ -40,45 +40,66 @@
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 2,
             "img": "images/product/Product-02.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "BERENJENA",
+            "price": 1900,
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 3,
             "img": "images/product/Product-03.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "CIRUELA ROJA NAL X 500 GR",
+            "price": 2200,
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 4,
             "img": "images/product/Product-04.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "DURAZNO NECTARIN (IMPORTADO)",
+            "price": 10900,
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 5,
             "img": "images/product/Product-05.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "PAPA CRIOLLA GRUESA",
+            "price": 2500,
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 6,
             "img": "images/product/Product-06.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "YUCA MEDIANA",
+            "price": 2800,
             "category": "FRUTAS"
         },
         {
-            "id": 1,
+            "id": 7,
             "img": "images/product/Product-07.jpg",
-            "name": "BANANO BOCADILLO",
-            "price": 1450,
+            "name": "ARROZ DIANA X 500 GR",
+            "price": 2200,
+            "category": "FRUTAS"
+        },
+        {
+            "id": 8,
+            "img": "images/product/Product-08.jpg",
+            "name": "AZUCAR MAYAGUEZ X 500 GR",
+            "price": 3100,
+            "category": "FRUTAS"
+        },
+        {
+            "id": 9,
+            "img": "images/product/Product-09.jpg",
+            "name": "HUEVOS AAA X 30 UND",
+            "price": 22500,
+            "category": "FRUTAS"
+        },
+        {
+            "id": 10,
+            "img": "images/product/Product-10.jpg",
+            "name": "LECHE ENTERA ALQUERIA X 6 UND X 1300 ML",
+            "price": 36000,
             "category": "FRUTAS"
         }
     ]
