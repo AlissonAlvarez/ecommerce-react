@@ -8,7 +8,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 min-height: 60vh;
-background-color: white;
+background-color:${props => props.theme.textPrimary};
 `
 
 const Producto = styled.div`
@@ -88,7 +88,7 @@ function ProductsList({ products }) {
                                     className={`btn ${productsList.find(pdt => pdt.id === product.id) ? "btn-del" : "btn-add"}`}
                                     onClick={() => handleAddOrRemoveProduct(product.id)}
                                 >
-                                    {productsList.find(pdt => pdt.id === product.id) ? "Eliminar" : "Agregar"} al Carrito
+                                    {productsList.find(pdt => pdt.id === product.id) ? "Eliminar" : "Agregar"} Producto
                                 </button>
 
                             </Producto>

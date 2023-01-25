@@ -4,7 +4,15 @@ import styled from 'styled-components';
 import {  addProductsCart, deleteProductCart } from '../redux/reducers/cart/cartSlice';
 
 const Section=styled.section`
-min-height:61vh`
+display: flex;
+justify-content: center;
+align-items: center;
+min-height:60vh;
+background-color:${props => props.theme.textPrimary};
+img{
+  width: 8rem;
+}
+`
 
 function Cart() {
   const dispatch = useDispatch();
@@ -14,22 +22,21 @@ function Cart() {
  
   return (
     <Section>
-      <h2>Cart</h2>
       <table className="table">
         <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Category</th>
-            <th scope="col">Actions</th>
+          <th scope="col">Producto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Opciones</th>
           </tr>
         </thead>
         <tbody>
           {productsList.map(product => {
             return (
               <tr key={product.id}>
-                <th scope="row">{product.id}</th>
+              <td scope="row"><img src={product.img} alt="" /></td>
                 <td scope="row">{product.name}</td>
                 <td scope="row">{product.price}</td>
                 <td scope="row">{product.category}</td>

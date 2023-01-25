@@ -111,19 +111,19 @@ const Nav = () => {
 
         <Menu showMobileMenu={showMobileMenu}>
           <MenuItem onClick={() => handleShowMobileMenu()}>
-            <MenuItemLink><Link to="/">HOME</Link></MenuItemLink>
+            <MenuItemLink><Link to="/">INICIO</Link></MenuItemLink>
             <hr />
           </MenuItem>
           <MenuItem onClick={() => handleShowMobileMenu()}>
-            <MenuItemLink> <Link to="products">PRODUCTS</Link></MenuItemLink>
+            <MenuItemLink> <Link to="products">PRODUCTOS</Link></MenuItemLink>
             <hr />
           </MenuItem>
           <MenuItem onClick={() => handleShowMobileMenu()}>
-            <MenuItemLink><Link to="contact">CONTACT</Link></MenuItemLink>
+            <MenuItemLink><Link to="contact">CONTACTO</Link></MenuItemLink>
             <hr />
           </MenuItem>
           <MenuItem onClick={handleShowMobileMenu} >
-            <MenuItemLink><Link to="cart">CART</Link></MenuItemLink>
+            <MenuItemLink><Link to="cart">CARRITO</Link></MenuItemLink>
             <hr />
           </MenuItem>
         </Menu>

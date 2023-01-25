@@ -7,17 +7,13 @@ import Title from '../components/Sections/Title';
 import Axios from 'axios';
 import ProductsCategories from '../components/Sections/ProductsCategories';
 import Contact from './Contact';
+import Hr from '../components/Sections/Hr';
 
 
 const Section = styled.section`
   display: flex;
   flex-direction: column;
   
-  hr {
-    text-align: center;
-    border-bottom: ${props => props.theme.fontxx} solid ${props => props.theme.title};   
-  }
-
   hn {
     text-align: center;
     border-bottom: ${props => props.theme.fontxx} solid ${props => props.theme.textPrimary};   
@@ -33,12 +29,11 @@ function Home() {
   }, [])
   return (
     <Section>
-      <hr />
       <img src={banner} alt='Logo' />
-      <hr />
-      <Title nombre='PRODUCTS' />
+      <Hr/>
+      <Title nombre='PRODUCTOS' />
       <ProductsCategories categories={categories} />
-      <Title nombre='CONTACT' />
+      <Title nombre='CONTACTO' />
       <Contact/>
       <hn/>
 

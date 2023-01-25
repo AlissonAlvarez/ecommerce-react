@@ -47,7 +47,7 @@ function Contact() {
           <p>Carrera 88 # 74 B - 29 Bogotá D.C</p>
         </Info>
         <Info>
-          <h1> <BsFillTelephoneFill /> Telefono:</h1>
+          <h1> <BsFillTelephoneFill /> Teléfono:</h1>
           <p>3124698883</p>
         </Info>
         <Info>
