@@ -34,7 +34,6 @@ function Cart() {
           <th scope="col">Producto</th>
             <th scope="col">Nombre</th>
             <th scope="col">Precio</th>
-            <th scope="col">Categoria</th>
             <th scope="col">Opciones</th>
           </tr>
         </thead>
@@ -45,7 +44,6 @@ function Cart() {
               <td scope="row"><img src={product.img} alt="" /></td>
                 <td scope="row">{product.name}</td>
                 <td scope="row">{product.price}</td>
-                <td scope="row">{product.category}</td>
                 <td scope="row"><button className="btn btn-danger" onClick={() => handleAddProduct(product)}>Agregar</button><button className="btn btn-danger" onClick={() => handleDeleteProduct(product.id)}>Delete</button></td>
               </tr>
             )
