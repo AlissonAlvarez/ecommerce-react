@@ -4,14 +4,20 @@ import styled from 'styled-components';
 import {  addProductsCart, deleteProductCart } from '../redux/reducers/cart/cartSlice';
 
 const Section=styled.section`
-display: flex;
-justify-content: center;
-align-items: center;
-min-height:60vh;
-background-color:${props => props.theme.textPrimary};
-img{
-  width: 8rem;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:60vh;
+  background-color:${props => props.theme.textPrimary};
+  img{
+    width: 8rem;
+  }
+  @media screen and (max-width: 1024px) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
 `
 
 function Cart() {

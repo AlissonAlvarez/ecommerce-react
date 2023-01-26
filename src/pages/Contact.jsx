@@ -12,6 +12,12 @@ const Section = styled.section`
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
+    @media screen and (max-width: 1024px) {
+      min-height: 110vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+  }
 `
 
 const Information = styled.div`
