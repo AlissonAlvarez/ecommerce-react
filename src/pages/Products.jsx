@@ -6,7 +6,7 @@ import Axios from 'axios';
 function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    Axios.get('http://localhost:3004/products').then(response => {
+    Axios.get('https://my-json-server.typicode.com/AlissonAlvarez/api-market/products').then(response => {
         setProducts(response.data);
       })
   }, [])

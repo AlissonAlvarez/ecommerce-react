@@ -23,7 +23,7 @@ const Section = styled.section`
 function Home() {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    Axios.get('http://localhost:3004/categories').then(response => {
+    Axios.get('https://my-json-server.typicode.com/AlissonAlvarez/api-market/categories').then(response => {
         setCategories(response.data);
       })
   }, [])
