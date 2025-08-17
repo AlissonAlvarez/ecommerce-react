@@ -9,13 +9,17 @@ flex-wrap: wrap;
 justify-content: center;
 min-height: 60vh;
 background-color:${props => props.theme.textPrimary};
+padding-top: ${props => props.theme.fontml};
+gap: 50px;
 `
 
 const Producto = styled.div`
-    width: 26rem;
+    width: 20rem;
     padding-top: ${props => props.theme.fontxx};
     padding-bottom: ${props => props.theme.fontxs};
     text-align: center;
+    box-shadow: 0px 1px 10px 1px #3a3a3a86;
+    border-radius: ${props => props.theme.fontxx};
 
     img{
         width: 8rem;
@@ -28,14 +32,16 @@ const Producto = styled.div`
     button{
         margin-top: ${props => props.theme.fontxs};
         padding: ${props => props.theme.fontxs};
-        border-radius:${props => props.theme.fontxs};
+        border-radius:${props => props.theme.fontxx};
         font-size:${props => props.theme.fontxs};
-        font-weight: bolder;
+        cursor: pointer;
+        transition: transform 0.5s;
+        /* font-weight: lighter; */
     }
     
     .btn-add{
-        background-color:${props => props.theme.body};
-        color:${props => props.theme.title};
+        background-color:${props => props.theme.textQuaternary};
+        color:${props => props.theme.textPrimary};
     }
 
     .btn-del{
@@ -52,7 +58,7 @@ const Producto = styled.div`
 
     @media screen and (min-width: 425px) {
     img{
-        width: 16rem;
+        width: 12rem;
     }
 }
 `

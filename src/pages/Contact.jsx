@@ -8,7 +8,7 @@ import { HiMail } from "react-icons/hi";
 const Section = styled.section`
     display: flex;
     flex-direction: row;
-    background-color: ${props => props.theme.title};
+    background-color: ${props => props.theme.textQuaternary};
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;

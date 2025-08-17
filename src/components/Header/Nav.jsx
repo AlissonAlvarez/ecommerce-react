@@ -13,7 +13,7 @@ export const Menu = styled.ul`
   justify-content: space-between;
   @media screen and (max-width: 1023px) {
     position: absolute;
-    top: ${props => props.theme.fontlg};
+    top: ${props => props.theme.fontxl};
     left: ${({ showMobileMenu }) => (showMobileMenu ? "0" : "-100%")};
     width: 100%;
     display: flex;
@@ -26,46 +26,55 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-  width: 100%;
+  /* width: 100%;
   height: 70px;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-end;
-  background-color:${props => props.theme.textSecondary};
+  align-items: flex-end; */
+  /* background-color:${props => props.theme.textSecondary}; */
   transition: 0.3s all ease;
   hr {
     text-align: center;
-    border-bottom: 0.3rem solid ${props => props.theme.body};
+    /* border-bottom: 0.3rem solid ${props => props.theme.body}; */
     transition: 0.3s all ease;
   }
   &:hover {
-    background-color: rgba(17, 103, 177, 0.3);
+    /* background-color: rgba(17, 103, 177, 0.3);
     transition: 0.3s all ease;
     hr {
       width: 100%;
       transition: 0.3s all ease;
       box-shadow: 1px -10px 20px rgba(42, 157, 244, 0.9);
-    }
+    } */
   }
  
   @media screen and (min-width : 1024px) {
     display: flex;
     width: 100%;
     height: 50px;
-    margin: 2%;
-    border-radius:${props => props.theme.fontxs};
+    /* margin: 2%; */
+    /* border-radius:${props => props.theme.fontxs}; */
   }
 `;
 
 export const MenuItemLink = styled.a`
   padding: 1rem 3rem;
-  color:${props => props.theme.textPrimary};
+  color:${props => props.theme.textQuaternary};
   font-size:${props => props.theme.fontxs};
   font-weight: 300;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 100%;
+  transition: 0.3s all ease;
+  /* border-bottom: 0.1rem solid ${props => props.theme.textTertiary}; */
+  &:hover {
+    border-bottom: 0.1rem solid ${props => props.theme.textTertiary};
+    transition: 0.3s all ease;
+  }
 `;
 
 export const MobileMenuIcon = styled.div`

@@ -7,14 +7,16 @@ const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   padding: ${props => props.theme.fontxx};
   min-height: 14vh;
   background-color:${props => props.theme.textPrimary};
   z-index: 10;
+  padding-top: 40px;
+  padding-bottom: 40px;
   @media screen and (min-width: 1024px) {
-    display: flex;
+    /* display: flex;*/
     flex-direction: column;
-    justify-content: center;
     min-height: 20vh;    
   }
 `

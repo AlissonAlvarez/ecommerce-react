@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
 html, body {
   width:100%;
-  background-color: #FCDC73;
+  /* background-color: #FCDC73; */
   font-family: 'Comfortaa';
 }
 

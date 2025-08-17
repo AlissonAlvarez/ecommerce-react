@@ -8,13 +8,15 @@ import { AiFillInstagram } from "react-icons/ai";
 const Section = styled.section`
     display: flex;
     justify-content: center;
-    background-color:${props => props.theme.textSecondary};
+    background-color:${props => props.theme.textPrimary};
 `
 
 const Logos = styled.div`
-    margin: ${props => props.theme.fontxs};
-    font-size:${props => props.theme.fontll};
-    color:${props => props.theme.body};    
+    /* display: flex; */
+    /* justify-content: space-between; */
+    padding: ${props => props.theme.fontxx};
+    font-size:${props => props.theme.fontsm};
+    color:${props => props.theme.textQuaternary};    
 `
 function Footer() {
     return (
